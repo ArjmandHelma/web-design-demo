@@ -14,7 +14,7 @@ This is a simple restaurant website built using HTML and CSS.
 ## How to use
 
 - Open `index.html` in your browser to view the website locally.  
-- The site is also hosted via GitHub Pages at: [your URL here]
+- The site is also hosted via GitHub Pages at: [https://arjmandhelma.github.io/web-design-demo/]
 
 ## Technologies used
 
