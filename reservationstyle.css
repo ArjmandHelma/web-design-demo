@@ -1,0 +1,109 @@
+/* For the entire page */
+body {
+  background: rgb(222, 217, 172);
+  font-family: 'Allan';
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+  font-size: 1.5vw; /* Use viewport width for flexible font size */
+}
+
+/* For the form */
+form {
+  background-color: rgb(145, 137, 73);
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50vw; 
+  max-width: 500px;
+  text-align: center;
+  color: #365a07;
+}
+
+/* For the title */
+.titeldesign {
+  text-align: center;
+  font-size: 4vw; 
+  margin-bottom: 2vw;
+  color: #3e6709;
+  margin-top: 10px; 
+  margin-bottom: 5px; 
+  font-size: 24px;
+}
+
+/* For input fields */
+input, select, textarea {
+  border-radius: 8px;/* Rounded corners for form elements */
+  padding: 2vw; 
+  border: 1px solid #ccc;
+  width: 80%; /* Make input fields 80% width of the form */
+  margin-bottom: 2vw;
+}
+
+/* For the small navigation links */
+.smallLinkBox {
+  position:absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.smallLinkBox a {
+  display: block;
+  color: rgb(22, 63, 3);
+  text-decoration:none;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  background-color:rgb(206, 196, 120);
+  border: 5px solid rgba(22, 63, 3, 0.5);
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+
+}
+/* Hover effect for navigation links */
+.smallLinkBox a:hover {
+  background-color: antiquewhite; /* Background color when hovering */
+  border-radius: 10px;
+}
+
+/* Responsive settings for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  body {
+      padding: 5vw; 
+      overflow-y:auto; 
+  }
+
+  form {
+      width: 85vw;/* Make the form wider on mobile */ 
+      padding: 2vw;
+  }
+
+  .smallLinkBox {
+      bottom: 5%; /* Adjust position of the small link box for mobile */
+      left: 5%;/* Adjust left position of the small link box */
+  }
+
+  .smallLinkBox a {
+      font-size: 4vw; /* Increase font size for mobile */ 
+      padding: 3vw;
+  }
+}
+
+/* Responsive settings for tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  form {
+      width: 60vw;/* Make the form slightly narrower for tablets */
+  }
+
+  .smallLinkBox {
+      bottom: 10%; /* Adjust bottom position for tablets */
+  }
+}

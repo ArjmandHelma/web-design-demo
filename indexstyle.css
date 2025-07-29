@@ -1,0 +1,139 @@
+
+/* Base styles for the body */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  /* Heading style */
+h1{
+    font-family:'Allan';font-size: 50px;
+}
+/* Welcome text style */
+.Text{
+   font-family: 'Aref Ruqaa';
+   font-size: 22px; 
+}
+/* Container for the welcome text */
+.FirstText{
+    margin-left: 250px;
+    padding: 10px;
+}
+
+body{
+    color: darkolivegreen;
+    background: rgb(222, 217, 172);
+}
+
+/* Sidebar design with links */
+.linkDesign {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(145, 137, 73);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 190px;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+/* Individual link styles */
+.linkDesign a{
+    display: block;
+    color: rgb(22, 63, 3);
+    text-decoration: none;
+    padding: 10px 5px;
+    width: 100%;
+    font-size: 16px;
+    text-align: 10px;
+    border-bottom: 1px solid rgb(255, 255,255, 0.3);
+}
+.linkDesign a:last-child{
+    border-bottom: none;
+}
+/* Hover effect for links */
+.linkDesign a:hover{
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+/* Image style inside .FirstPhoto */
+.FirstPhoto img{
+margin-left: 500px;
+max-width: 500%;
+display: block;
+}
+/* Opening times block inside sidebar */
+.OpenTimes{
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: rgb(65, 55, 2);
+    justify-content: end;
+    font-family: 'Allan'; 
+    font-size: 22px;
+}
+/* Paragraphs inside OpenTimes */
+.OpenTime p {
+    font-family: 'Allan'; 
+    font-size: 42px;
+}
+/* Main gallery container */
+.FirstPagePhoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+/* Large main image styling */
+.big{
+    width: 1200px;
+    height: 600px;
+    object-fit: cover;
+    margin-left: 225px;
+    border-radius: 20px;
+}
+/* Small image */
+.small{
+    display: flex;
+    gap: 1px;
+    margin-left: 225px;
+}
+/* Individual small images */
+.small img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Responsive adjustments for tablets and mobile */
+@media only screen and (max-width: 420px) {
+    .linkDesign {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        overflow: visible;
+        padding-bottom: 40px; 
+    }
+
+    .OpenTimes {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .OpenTimes p {
+        font-size: 1rem; 
+    }
+
+ 
+    footer {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}
+
+
+  
+

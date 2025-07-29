@@ -1,0 +1,160 @@
+body {
+    background-color: rgb(228, 221, 167);
+    font-family: 'Allan';
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #3b5216;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.menu-section {
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+/* Main Section Styles */
+.image-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Adding perspective to create a 3D flip effect */
+.flip-container {
+    perspective: 1000px;
+    position: relative;
+}
+
+/* Sizes for different sections */
+.Starters .flip-container {
+    width: 200px;
+    height: 200px;
+}
+
+.Main .flip-container {
+    width: 500px;
+    height: 300px;
+}
+
+.Desserts .flip-container {
+    width: 200px;
+    height: 200px;
+}
+
+.Drink .flip-container {
+    width: 200px;
+    height: 300px;
+}
+/* Flip effect styles */
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 5px solid #3b5216;
+    box-sizing: border-box;
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.back {
+    background: rgb(228, 221, 167);
+    color: #3b5216;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Small Link Box at the top */
+.smallLinkBox {
+    position: fixed;
+    top: 10px; 
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10; /* it stays above other content */
+}
+
+/* Styling for links inside small link box */
+.smallLinkBox a {
+    display: block;
+    color: rgb(22, 63, 3);
+    text-decoration: none;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(206, 196, 120);
+    border: 5px solid rgba(22, 63, 3, 0.5);
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.smallLinkBox a:hover {
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.smallLinkBox a {
+    font-family: 'Allan';
+    font-size: 22px;
+}
+
+
+/* Creating space for fixed boxes */
+.image-row {
+    padding-top: 80px; 
+}
+
+/* Responsive Setings */
+@media (max-width: 768px) {
+   /* Adjust sizes of flip containers for mobile screens */ 
+    .Starters .flip-container,
+    .Desserts .flip-container {
+        width: 150px;
+        height: 150px;
+    }
+    .Main .flip-container {
+        width: 300px;
+        height: 200px;
+    }
+    .Drink .flip-container {
+        width: 150px;
+        height: 250px;
+    }
+
+     /* Keep the small link box fixed at the top on mobile */
+    .smallLinkBox {
+        top: 10px; 
+        left: 10px;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Reservation Form</title>
+  <link rel="stylesheet" href="reservationstyle.css">
+  <link href='https://fonts.googleapis.com/css?family=Aref Ruqaa' rel='stylesheet'>
+  <header>
+    <!-- Small fixed link box for navigation -->
+    <div class="smallLinkBox">
+        <a href="Menu.html">Menu</a>
+        <a href="Online reservation.html">Online Reservation</a>
+        <a href="Contact us.html">Contact Us</a>
+        <a href="index.html">Homepage</a>
+        <a href="aboutus.html">About Us</a>
+    </div>
+</header>
+</head>
+<body>
+ <!-- Reservation Title Section -->
+  <div class="titeldesign"><h2>Online Reservation</h2></div>
+<!-- Reservation Form Section -->
+  <form action="#">
+       <!-- Full Name Input -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+<!-- Phone Number Input -->
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+ <!-- Reservation Date Input -->
+    <label for="date">Reservation Date:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+<!-- Reservation Time Input -->
+    <label for="time">Reservation Time:</label><br>
+    <input type="time" id="time" name="time" required><br><br>
+<!-- Number of Guests Dropdown -->
+    <label for="guests">Number of Guests:</label><br>
+    <select id="guests" name="guests">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6+">6+</option>
+    </select><br><br>
+<!-- Additional Notes Textarea (Optional) -->
+    <label for="notes">Additional Notes (Optional):</label><br>
+    <textarea id="notes" name="notes" rows="3"></textarea><br><br>
+<!-- Submit Button -->
+    <div class="submit"><button type="submit">Submit Reservation</button></div>
+
+  </form>
+
+</body>
+</html>
